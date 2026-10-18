@@ -63,7 +63,7 @@ export function anchorPosFor(anchors: number[], opIndex: number): number {
  * @param anchors     The anchor op indices from layerAnchors().
  * @param anchorPos   The current anchor position index from anchorPosFor().
  * @param numLayers   Total transformer layers.
- * @returns The transformer layer index (0 .. numLayers - 1), or -1 for embedding / pre-transformer.
+ * @returns The transformer layer index (0 .. numLayers - 1), numLayers for output, or -1 for embedding / pre-transformer / invalid anchor.
  */
 export function anchorToLayerIndex(
   catalog: OpCatalogEntry[],
